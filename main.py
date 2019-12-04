@@ -2,9 +2,8 @@
 
 import json
 import requests
-import sys
 
-url = "https://inamuu.com/wp-json/wp/v2/posts?per_page=10&search=ansible
+url = "https://inamuu.com/wp-json/wp/v2/posts?per_page=10&search={query}"
 headers = {"content-type": "application/json"}
 data = requests.get(url, headers=headers)
 jsondata = data.json()
@@ -15,5 +14,5 @@ for i in jsondata:
     search_list.append(search_result)
 
 
-dict_2 = json.dumps({ "items": search_list }, ensure_ascii=False)
-print(dict_2)
+postsdata = json.dumps({ "items": search_list }, ensure_ascii=False)
+print(postsdata)
