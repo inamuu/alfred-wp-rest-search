@@ -11,7 +11,7 @@ Alfredのsclipt filterがデフォルトで`/usr/bin/python`なので下記で�
 
 ```sh
 $ sudo /usr/bin/python -m easy_install pip
-$ /usr/bin/pyton -m pip install requests
+$ /usr/bin/python -m pip install requests
 ```
 
 ## 構成
