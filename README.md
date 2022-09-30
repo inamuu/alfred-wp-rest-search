@@ -1,8 +1,6 @@
 alfred-wp-rest-search
 ===
 
-## 内容
-
 WordPressの記事データを検索するAlfredのWorkflowです。
 
 ## セットアップ
