@@ -7,11 +7,27 @@ WordPressの記事データを検索するAlfredのWorkflowです。
 
 ## セットアップ
 
-Alfredのsclipt filterがデフォルトで`/usr/bin/python`なので下記でセットアップが必要です。
+Alfredのsclipt filterがデフォルトで`/usr/bin/python`なので下記でセットアップが必要です。  
+`Python 3.9.x` でも動作しますので、`/usr/bin/python3` がある場合は、それをAlfredで指定します。  
+
+次にrequestsライブラリをインストールします。
+
+Python3.9.X
+
+```sh
+$ /usr/bin/python3 -m pip install requests
+```
+
+Python2.7.X
+
+```sh
+$ /usr/bin/python -m pip install requests
+```
+
+pip が無い場合
 
 ```sh
 $ sudo /usr/bin/python -m easy_install pip
-$ /usr/bin/python -m pip install requests
 ```
 
 ## 構成
